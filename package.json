@@ -1,0 +1,25 @@
+{
+  "name": "leaflet-measure-simple",
+  "version": "1.0.0",
+  "description": "Leaflet measure simple",
+  "main": "leaflet.measure/leaflet.measure.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lozanoje/leaflet.measure.git"
+  },
+  "keywords": [
+    "leaflet"
+  ],
+  "author": "lozanoje@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lozanoje/leaflet.measure/issues"
+  },
+  "homepage": "https://github.com/lozanoje/leaflet.measure#readme",
+  "peerDependencies": {
+    "leaflet": "^1.0.3"
+  }
+}
