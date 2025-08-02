@@ -137,7 +137,9 @@ L.Control.Measure = L.Control.extend({
         this._distance = 0
       }
       this._updateTooltipPosition(e.latlng)
-      var distance = e.latlng.distanceTo(this._lastPoint)
+      var currentPoint = e.latlng;                                                      
+  var lastPoint = this._lastPoint;
+  var distance = map.distance(currentPoint, lastPoint);
       this._updateTooltipDistance(this._distance + distance, distance)
     }
   },
@@ -158,7 +160,9 @@ L.Control.Measure = L.Control.extend({
       }
 
       this._updateTooltipPosition(e.latlng)
-      var distance = e.latlng.distanceTo(this._lastPoint)
+      var currentPoint = e.latlng;                                                      
+  var lastPoint = this._lastPoint;
+  var distance = map.distance(currentPoint, lastPoint);
       this._updateTooltipDistance(this._distance + distance, distance)
 
       this._distance += distance
